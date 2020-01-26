@@ -1,10 +1,11 @@
-import { Offer } from './offer.model';
-import { OffersService } from './offers.service';
-import { Injectable } from '@angular/core';
-import { Resolve, ActivatedRouteSnapshot, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { catchError, map } from 'rxjs/operators';
+import { catchError } from 'rxjs/operators';
 
+import { Injectable } from '@angular/core';
+import { ActivatedRouteSnapshot, Resolve, Router } from '@angular/router';
+
+import { Offer } from './offers.model';
+import { OffersService } from './offers.service';
 
 @Injectable({ providedIn: 'root' })
 export class OffersResolver implements Resolve<Offer[]> {

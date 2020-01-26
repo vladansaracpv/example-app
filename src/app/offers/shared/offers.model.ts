@@ -4,3 +4,7 @@ export interface Offer {
   contractStartDate: Date;
   contractEndDate: Date;
 }
+
+export interface Offers {
+  offers: Offer[];
+}

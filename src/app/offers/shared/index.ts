@@ -1,3 +1,7 @@
+// Models
+export * from './offers.model';
+export * from './subscription.model';
+
+// Services
 export * from './offers.resolver';
-export * from './offer.model';
 export * from './offers.service';

@@ -1,3 +1,4 @@
+import { OfferDetailComponent } from './offer-detail/offer-detail.component';
 import { OffersResolver } from './shared';
 import { OffersComponent } from './offers.component';
 import { NgModule } from '@angular/core';
@@ -7,7 +8,12 @@ const routes: Routes = [
   {
     path: '',
     component: OffersComponent,
-    resolve: { offers: OffersResolver }
+    resolve: { offers: OffersResolver },
+    data: { title: 'Active packages' }
+  },
+  {
+    path: ':id',
+    component: OfferDetailComponent,
   }
 ];
 

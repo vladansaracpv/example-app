@@ -9,13 +9,17 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class OffersComponent implements OnInit {
   offers: Offer[];
+  title: string;
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.data.subscribe(
-      (data: { offers: Offer[] }) => {
+      (data: { offers: Offer[], title: string }) => {
         this.offers = data.offers;
+        this.title = data.title;
         console.log(this.offers);
+        console.log(this.title);
+
       }
     );
   }

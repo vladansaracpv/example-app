@@ -1,12 +1,10 @@
-import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { HttpClient } from '@angular/common/http';
-import { Offer } from './offer.model';
 
-interface Offers {
-  offers: Offer[];
-}
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+
+import { Offer, Offers } from './offers.model';
 
 @Injectable({
   providedIn: 'root'

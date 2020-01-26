@@ -1,0 +1,10 @@
+:host {
+  flex: 1 1 auto;
+}
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}

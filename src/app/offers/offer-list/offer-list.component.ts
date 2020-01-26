@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Offer } from '../shared';
 
 @Component({
   selector: 'app-offer-list',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./offer-list.component.scss']
 })
 export class OfferListComponent implements OnInit {
+  @Input() offers: Offer[];
 
   constructor() { }
 
