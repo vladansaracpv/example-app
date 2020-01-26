@@ -5,6 +5,18 @@
 .offers {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   height: 100%;
+
+  .title {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  app-offer-list {
+    flex: 1 1 auto;
+  }
 }

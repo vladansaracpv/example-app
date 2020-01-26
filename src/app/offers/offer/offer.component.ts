@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, Input } from '@angular/core';
 import { Offer } from '../shared';
 
@@ -9,9 +10,15 @@ import { Offer } from '../shared';
 export class OfferComponent implements OnInit {
   @Input() offer: Offer;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goToDetails() {
+    console.log('Navigate');
+
+    this.router.navigateByUrl('/offers/' + this.offer.id, { state: { data: this.offer } });
   }
 
 }

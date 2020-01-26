@@ -1,0 +1,24 @@
+:host {
+  flex: 1 1 auto;
+}
+
+.offer-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+
+  .title {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .subscriptions {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+  }
+}

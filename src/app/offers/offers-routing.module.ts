@@ -1,5 +1,5 @@
 import { OfferDetailComponent } from './offer-detail/offer-detail.component';
-import { OffersResolver } from './shared';
+import { OffersResolver, OfferResolver } from './shared';
 import { OffersComponent } from './offers.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -14,6 +14,7 @@ const routes: Routes = [
   {
     path: ':id',
     component: OfferDetailComponent,
+    resolve: { subscriptions: OfferResolver }
   }
 ];
 

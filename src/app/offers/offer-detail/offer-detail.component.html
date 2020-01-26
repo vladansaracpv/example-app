@@ -1,1 +1,9 @@
-<p>offer-detail works!</p>
+<div class="offer-detail" *ngIf="offer">
+  <h2 class="title">{{ offer.name }}</h2>
+  <div class="subscriptions">
+    <app-offer-subscription
+      *ngFor="let subscription of subscriptions"
+      [subscription]="subscription"
+    ></app-offer-subscription>
+  </div>
+</div>
