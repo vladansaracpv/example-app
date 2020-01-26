@@ -11,11 +11,11 @@ const routes: Routes = [
     redirectTo: 'offers',
     pathMatch: 'full'
   },
-  // {
-  //   path: '**',
-  //   component: NotFoundErrorComponent
-  // },
-
+  {
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
