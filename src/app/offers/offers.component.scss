@@ -9,7 +9,7 @@
   height: 100%;
 
   .title {
-    flex: 1 1 auto;
+    flex: 5 5 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,6 +17,19 @@
   }
 
   app-offer-list {
+    flex: 5 5 auto;
+  }
+
+  .back {
     flex: 1 1 auto;
+    align-self: center;
+    outline: none;
+
+    img {
+      height: 32px;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+    }
   }
 }

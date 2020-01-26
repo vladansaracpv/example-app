@@ -1,9 +1,14 @@
 <div class="offer-detail" *ngIf="offer">
-  <h2 class="title">{{ offer.name }}</h2>
+  <div class="title">
+    <h2>{{ offer.name }}</h2>
+  </div>
   <div class="subscriptions">
     <app-offer-subscription
       *ngFor="let subscription of subscriptions"
       [subscription]="subscription"
     ></app-offer-subscription>
+  </div>
+  <div class="back" routerLink="/offers">
+    <img src="../../../assets/back.svg" />
   </div>
 </div>
