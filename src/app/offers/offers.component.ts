@@ -17,9 +17,6 @@ export class OffersComponent implements OnInit {
       (data: { offers: Offer[], title: string }) => {
         this.offers = data.offers;
         this.title = data.title;
-        console.log(this.offers);
-        console.log(this.title);
-
       }
     );
   }

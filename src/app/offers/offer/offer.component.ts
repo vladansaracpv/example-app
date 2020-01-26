@@ -16,8 +16,6 @@ export class OfferComponent implements OnInit {
   }
 
   goToDetails() {
-    console.log('Navigate');
-
     this.router.navigateByUrl('/offers/' + this.offer.id, { state: { data: this.offer } });
   }
 

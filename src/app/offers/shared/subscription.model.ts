@@ -17,3 +17,7 @@ export interface Subscription {
   type: string;
   usage?: Usage[];
 }
+
+export interface Subscriptions {
+  subscriptions: Subscription[];
+}
