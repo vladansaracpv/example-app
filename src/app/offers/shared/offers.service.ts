@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { Offer } from './offer.model';
 
@@ -14,8 +15,8 @@ export class OffersService {
 
   constructor(private http: HttpClient) { }
 
-  getOffers(): Observable<Offers> {
-    return this.http.get<Offers>('/offers');
+  getOffers(): Observable<Offer[]> {
+    return this.http.get<Offers>('/offers').pipe(map(data => data.offers));
   }
 
   getOfferSubscriptions(id: number): Observable<any> {
