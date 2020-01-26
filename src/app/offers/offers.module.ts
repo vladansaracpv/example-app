@@ -6,7 +6,12 @@ import { OffersComponent } from './offers.component';
 import { OfferListComponent, OfferComponent, OfferDetailComponent } from '.';
 
 @NgModule({
-  declarations: [OffersComponent, OfferComponent, OfferDetailComponent, OfferListComponent],
+  declarations: [
+    OffersComponent,
+    OfferComponent,
+    OfferDetailComponent,
+    OfferListComponent
+  ],
   imports: [
     SharedModule,
     OffersRoutingModule

@@ -5,5 +5,3 @@ export * from './offer-list/offer-list.component';
 
 // Shared code (Model, Service, Resolver)
 export * from './shared';
-
-export * from './offers.module';
