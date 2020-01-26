@@ -9,12 +9,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  height: 100%;
-}
-
 body {
-  height: calc(100% - 8px);
+  margin: 0;
 }
 
 h1,
@@ -30,15 +26,6 @@ p {
   margin: 0;
 }
 
-.content {
-  display: flex;
-  margin: 32px auto;
-  padding: 0 16px;
-  max-width: 960px;
-  flex-direction: column;
-  align-items: center;
-}
-
 a,
 a:visited,
 a:hover {
@@ -48,6 +35,37 @@ a:hover {
 
 a:hover {
   color: #125699;
+}
+
+.toolbar {
+  height: 60px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+
+  img {
+    margin: 0 16px;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  .toolbar {
+    justify-content: center;
+  }
+}
+
+.content {
+  display: flex;
+  margin: 32px 0;
+  padding: 0 16px;
+  flex-direction: column;
 }
 
 /* Responsive Styles */
