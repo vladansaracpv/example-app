@@ -1,6 +1,7 @@
 <div class="offer-detail" *ngIf="offer">
   <div class="title">
     <h2>{{ offer.name }}</h2>
+    <p>Ends in: {{ offer.contractEndDate }}</p>
   </div>
   <div class="subscriptions">
     <app-offer-subscription

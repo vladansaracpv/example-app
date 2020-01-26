@@ -16,8 +16,13 @@
     align-items: center;
   }
 
+  p {
+    color: #999;
+  }
+
   app-offer-list {
     flex: 5 5 auto;
+    align-items: flex-start;
   }
 
   .back {

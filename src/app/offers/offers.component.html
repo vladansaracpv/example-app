@@ -1,5 +1,9 @@
 <div class="offers">
-  <h2 class="title">{{ title }}</h2>
+  <div class="title">
+    <h2>{{ title }}</h2>
+    <p>Total: {{ offers.length }}</p>
+  </div>
+
   <app-offer-list [offers]="offers"></app-offer-list>
   <div class="back" routerLink="/">
     <img src="../../../assets/back.svg" />
