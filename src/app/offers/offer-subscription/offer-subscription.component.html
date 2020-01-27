@@ -1,6 +1,6 @@
 <div class="subscription">
   <div class="icon">
-    <img [src]="Icons[subscription.type]" />
+    <img src="assets/{{ subscription.type }}.svg" />
   </div>
   <div class="type">
     <h3>{{ subscription.name }}</h3>
@@ -14,7 +14,7 @@
     </div>
     <div *ngIf="!subscription?.usage">
       <div class="usage status">
-        <span>Status</span>
+        <span>Status:</span>
         <span>Active</span>
       </div>
     </div>

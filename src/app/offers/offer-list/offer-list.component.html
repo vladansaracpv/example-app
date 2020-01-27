@@ -1,5 +1,5 @@
 <div class="container">
-  <div *ngFor="let offer of offers">
+  <div *ngFor="let offer of offers" [@flyInOut]="'in'">
     <app-offer [offer]="offer"></app-offer>
   </div>
 </div>

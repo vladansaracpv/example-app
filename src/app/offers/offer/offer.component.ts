@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Offer } from '../shared';
 
 @Component({
@@ -7,15 +7,12 @@ import { Offer } from '../shared';
   templateUrl: './offer.component.html',
   styleUrls: ['./offer.component.scss']
 })
-export class OfferComponent implements OnInit {
+export class OfferComponent {
   @Input() offer: Offer;
 
   constructor(private router: Router) { }
 
-  ngOnInit() {
-  }
-
-  goToDetails() {
+  showDetails() {
     this.router.navigateByUrl('/offers/' + this.offer.id, { state: { data: this.offer } });
   }
 
